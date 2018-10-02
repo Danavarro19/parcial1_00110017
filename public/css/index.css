@@ -117,10 +117,6 @@ input, textarea, label {
     padding: 1em;
 }
 
-.cover {
-    object-fit: cover;
-}
-
 .section-contact {
     background-image: url(../img/contacus.jpg);
     z-index: -1;
