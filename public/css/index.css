@@ -1,0 +1,27 @@
+body {
+    background: #f5f5f5;
+}
+
+.header-section .links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    background: #000;
+    max-height: 5vh;
+}
+
+.header-section .links li {
+    display: inline-block;
+    color: #f5f5f5;
+    text-transform: uppercase;
+}
+
+.header-section img {
+    display: inline-block;
+    max-height: 5vh;
+}
+
+.header-section links a {
+    text-decoration: none;
+}
