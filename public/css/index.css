@@ -1,22 +1,27 @@
-body {
-    background: #f5f5f5;
-    font-family: 'Raleway', sans-serif;
-}
 
 :root {
     --color-font:#f5f5f5;
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
+body {
+    background: var(--color-font);
+    font-family: 'Raleway', sans-serif;
 }
 
-input, textarea {
+
+img {
     display: block;
+    max-width: 100%;
+    max-height: 100%;   
+}
+
+input, textarea, label {
+    display: block;
+    border-radius: 5px;
     width: 90%;
     margin: 0.5em;
     padding: 0.5em;
+    text-transform: capitalize;
 }
 
 .flex {display: flex;}
@@ -27,13 +32,18 @@ input, textarea {
 .flex-2 { flex: 2;}
 .flex-3 { flex: 3;}
 
+.border { border: 2px solid  #440d5a; }
+
+.white {color : var(--color-font);}
+
 .btn {
     padding: 0.5em 4em;
     background: orange;
     border-radius: 4px;
     border: none;
-    width: 100%;
-    color: #FFF;
+    width: 90%;
+    margin: auto;
+    color: var(--color-font);
     text-transform: capitalize;
 }
 
@@ -59,7 +69,7 @@ input, textarea {
 
 .header-section .links li {
     display: inline-block;
-    color: #f5f5f5;
+    color: var(--color-font);
     text-transform: uppercase;
 }
 
@@ -79,9 +89,17 @@ input, textarea {
 }
 
 .banner h1 {
+    padding-top: 2em;
     font-family: 'Monoton', cursive;
-    font-size: 4rem;
-} 
+    font-size: 6rem;
+    font-weight: lighter;
+    text-transform: capitalize;
+}
+
+.banner i {
+    font-size: 2em;
+    margin-top: 6em;
+}
 
 .main-section {
     display: grid;
@@ -99,9 +117,12 @@ input, textarea {
     padding: 1em;
 }
 
+.cover {
+    object-fit: cover;
+}
+
 .section-contact {
     background-image: url(../img/contacus.jpg);
-    color: #f5f5f5;
     z-index: -1;
 }
 
@@ -129,7 +150,6 @@ input, textarea {
 
 .footer {
     background: #000;
-    color: #f5f5f5;
     padding: 1em 2em;
 }
 
@@ -143,7 +163,6 @@ input, textarea {
 } 
 
 @media only screen and (max-width: 800px) {
-    
     
     .header-section .links {
         max-height: 15vh;
@@ -166,17 +185,17 @@ input, textarea {
     .main-section {
         display: block;
     }
+    
+    [class*="section-"]:last-child {
+        margin-bottom: 3em;
+    }
 
     .section-contact, .footer {
         flex-direction: column;
     }
 
-    .section-to-contact {
-        order: 1;
-    }
+    .section-to-contact {order: 1;}
 
-    .form {
-        order: 2;
-    }
+    .form {order: 2;}
 
 }
