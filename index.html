@@ -104,9 +104,43 @@
         </section>    
     </main>
     
-    <section class="section-contact bg-img">
+    <section class="section-contact bg-img flex">
+
+        <form action="GET" class="flex-1">
+            <label for="name">name</label>
+            <input type="text" name="name" placeholder="Jhon">
+            <label for="email">email</label>
+            <input type="email" name="email" placeholder="jhon@domain.com">
+            <label for="comments">comments</label>
+            <textarea name="" id="" cols="20" rows="20" placeholder="How can I help you?"></textarea>
+            <input type="submit" class="btn">
+        </form>
+        
+        <div class="section-to-contact flex-1">
+            <h1>contact us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, ipsam hic! Dignissimos id quaerat libero, perspiciatis, aliquam laborum ipsam repellendus magnam minima excepturi iusto cupiditate!</p>  
+        </div>
 
     </section>
+
+    <footer class="footer flex">
+        <div class="social flex-1">
+            <h1>social</h1>
+            <ul>
+                <li><i class="fab fa-facebook-square"></i> facebook</li>
+                <li><i class="fab fa-twitter-square"></i> twitter</li>
+                <li><i class="fab fa-instagram"></i> instagram</li>
+            </ul>
+        </div>
+        <div class="more flex-1">
+            <h1>more about</h1>
+            <ul>
+                <li>item-1</li>
+                <li>item-2</li>
+                <li>item-3</li>
+            </ul>
+        </div>
+    </footer>
     
 </body>
 </html>
